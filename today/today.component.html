@@ -1,0 +1,43 @@
+<div class="container">
+
+  <select>
+    <option value="Breakfast">Breakfast</option>
+    <option value="Breakfast">Snack</option>
+    <option value="Breakfast">Lunch</option>
+    <option value="Breakfast">Dinner</option>
+    <option value="Breakfast">Desert</option>
+  </select>
+
+  <hr>
+
+  <table id="table">
+    <tr>
+      <th>
+        <div class="form-group">
+          <input type="text" class="form-control col-md-2" id="name" placeholder="Name of Food" value="{{todayName}}">
+        </div>
+     </th>
+    </tr>
+      <hr class="my-4">
+    <tr>
+      <th>
+        <div class="form-group">
+          <input type="text" class="form-control col-md-2" id="calories" placeholder="Calories" value="{{todayCalories}}">        </div>
+      </th>
+    </tr>
+    <hr class="my-4">
+    <tr>
+      <th>
+        <div class="form-group">
+          <textarea value="{{todayDetails}}" name="name" rows="5" class="col-md-2 form-control" id="details" placeholder="Details"></textarea>
+        </div>
+      </th>
+    </tr>
+    <hr class="my-4">
+    <tr>
+      <th>
+        <button type="button" class="btn btn-primary" click="onClick()">Submit</button>
+      </th>
+    </tr>
+  </table>
+</div>
